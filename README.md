@@ -1,10 +1,22 @@
 # Spotify
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+## versiones usadas 
+
+Angular v16.2.16
+node v20.17.0
+npm v10.8.2
+
+
+## librerias
+
+Iconos -> IconScout
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` -> `http://localhost:4200/`
+para poder verlo en mobile u otros dispositivos:
+- abrir el navegador web y `http://IP:4200/`
+
 
 ## Code scaffolding
 
