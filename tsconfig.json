@@ -26,9 +26,6 @@
       "@modules/*": [
         "src/app/modules/*"
       ],
-      "@shared/*": [
-        "src/app/shared/*"
-      ],
     },
     "useDefineForClassFields": false,
     "lib": [
