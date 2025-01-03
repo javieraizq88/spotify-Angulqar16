@@ -12,9 +12,14 @@
             <i class="uil uil-play"></i>
         </button>
     </div> 
-    <!-- <img [src]="track.cover" [alt]="" class="cover">
+</div>
+
+<!-- mode (big)-->
+<div *ngIf="mode==='big'" class="card-player player-big">
+    <img [src]="track.cover" alt="" class="cover">
     <div class="content-player">
-        {{track.name}}
+        <div class="title-track">{{track.name}}</div>
+        <div class="sub-title-track">{{track.name}}</div>
     </div>
     <div class="buttons-player">
         <button *ngIf="true" class="play-btn">
@@ -23,12 +28,8 @@
         <button *ngIf="false" class="play-btn">
             <i class="uil uil-play"></i>
         </button>
-    </div> -->
-</div>
-
-<!-- mode (big)-->
-<!-- <div *ngIf="mode==='big'" class="card-player player-big">
-   <img appImgBroken [customImg]="'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png'" [src]="track.cover" alt="" class="cover">
+    </div> 
+   <!-- <img appImgBroken [customImg]="'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png'" [src]="track.cover" alt="" class="cover">
     <div class="content-player">
         <div class="title-track">{{track.name}}</div>
         <div class="sub-title-track">{{track.name}}</div>
@@ -40,5 +41,5 @@
         <button *ngIf="false" class="play-btn">
             <i class="uil uil-play"></i>
         </button>
-    </div> 
-</div> -->
+    </div>  -->
+</div>
