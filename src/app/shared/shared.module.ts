@@ -10,7 +10,6 @@ import { HeaderUserComponent } from './components/header-user/header-user.compon
     SideBarComponent,
     MediaPlayerComponent,
     HeaderUserComponent
-    
   ],
   imports: [
     CommonModule
@@ -19,7 +18,6 @@ import { HeaderUserComponent } from './components/header-user/header-user.compon
     SideBarComponent, 
     MediaPlayerComponent,
     HeaderUserComponent,
-    
   ]
 })
 export class SharedModule { }
