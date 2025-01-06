@@ -1,7 +1,17 @@
 <div class="tracks-page">
     <!--section top (small)-->
-    <app-seccion-generica [title]="'¡La mejor música del mundo!'" [mode]="'small'" [dataTracks]="mockTrackList"></app-seccion-generica>
-    <app-seccion-generica [title]="'Lo mejor de Electronica'" [mode]="'big'" [dataTracks]="mockTrackList"></app-seccion-generica>
+    <app-seccion-generica 
+        [title]="'¡La mejor música del mundo!'" 
+        [mode]="'small'" 
+        [dataTracks]="tracksTrending"
+    >
+    </app-seccion-generica>
+    <app-seccion-generica 
+        [title]="'Lo mejor de Electronica'" 
+        [mode]="'big'" 
+        [dataTracks]="tracksRandom"
+    >
+    </app-seccion-generica>
     <!-- <app-seccion-generica [dataTracks]="tracksTrending" [mode]="'small'" [title]="'¡La mejor música del mundo!'">
     </app-seccion-generica> -->
     <!--section medium (big)-->
