@@ -9,9 +9,22 @@ import * as data1 from "../../../data/canciones.json"
 export class TrackService {
 
   dataTracksTrending$: Observable<TrackModel[]> = of([])
-  
+  dataTracksRandom$: Observable<any> = of([])
+
   constructor() {
     const { data }: any = (data1 as any).default
     this.dataTracksTrending$ = of(data)
-   }
+    this.dataTracksRandom$ = new Observable((observer) => {
+      const trackExample: TrackModel = {
+        _id: 2,
+        name: "ejemplo",
+        album: "ejemplo album",
+        url: "", 
+        cover: ""
+      }
+        setTimeout(() =>{
+          observer.next([trackExample])
+        },2000 )
+    })
+  }
 }
