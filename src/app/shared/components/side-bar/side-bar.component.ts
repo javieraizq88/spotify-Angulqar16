@@ -17,7 +17,6 @@ export class SideBarComponent implements OnInit {
 
   constructor(
     private router: Router, 
-    // private trackService: TrackService
   ) { }
 
   ngOnInit(): void {
@@ -69,16 +68,6 @@ export class SideBarComponent implements OnInit {
         router: ['/']
       }
     ]
-
-    // this.trackService.dataTracksRandom$
-    //   .subscribe((response: any) =>{
-    //     this.customOptions.push(
-    //       {
-    //         name: response[0].name,
-    //         router: []
-    //       }
-    //     )
-    //   })
   }
 
   goTo($event: any): void {
