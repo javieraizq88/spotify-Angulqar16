@@ -7,7 +7,27 @@ node v20.17.0
 npm v10.8.2
 
 
-## librerias
+## para la API -> descargar repo
+
+1) `git clone https://github.com/leifermendez/node-api-tracks.git`
+
+2) en la raiz de ese repo crear el archivo .env indicando el puerto y el JWT_SECRET
+
+    DB_URI=
+    PORT=3001
+    JWT_SECRET=Ejemplo123 
+
+3) `npm install`
+
+4) `node app.js`
+y debe salir este resultado
+
+    CARGAR RUTA ----> auth
+    CARGAR RUTA ----> tracks
+    Tu API es http://localhost:3001/api/1.0 
+
+5) en http://localhost:3001/api/1.0/tracks estan las canciones
+
 
 Iconos -> IconScout
 
