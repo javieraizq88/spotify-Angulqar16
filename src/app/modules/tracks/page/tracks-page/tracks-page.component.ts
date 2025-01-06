@@ -18,10 +18,16 @@ export class TracksPageComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.trackService.getAllTracks$()
-      .subscribe(response => {
-        console.log("aaaaaaaaaa", response)
+      .subscribe((response: TrackModel[]) => { // TODO  trae { data{} }
+        console.log("desde la API", response)
+        this.tracksTrending = response
       })
 
+    this.trackService.getAllRandom$()
+      .subscribe((response: TrackModel[]) => { 
+        console.log("desde la API invertidas", response)
+        this.tracksRandom = response
+      })
   }
 
   ngOnDestroy(): void {
